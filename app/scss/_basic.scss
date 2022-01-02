@@ -1,8 +1,8 @@
 // Typography
 body{
     font-family: $fonts;
-    font-size: 1.25rem;
-	line-height: 1.75;
+    font-size: 1rem;
+	line-height: 1.15;
     font-weight: $body_font_weight;
 }
 
@@ -22,13 +22,13 @@ h1 {
     font-size: 4.209rem;
 }
   
-  h2 {font-size: 3.157rem;}
-  
-  h3 {font-size: 2.369rem;}
-  
-  h4 {font-size: 1.777rem;}
-  
-  h5 {font-size: 1.333rem;}  
+h2 {font-size: 3.157rem;}
+
+h3 {font-size: 2.369rem;}
+
+h4 {font-size: 1.777rem;}
+
+h5 {font-size: 1.333rem;}  
   
 // Text
 strong{
@@ -100,7 +100,7 @@ textarea {
 
 // Branding
 .logo{
-    height: 7.8125rem;
+    font-size: 2rem;
 }
 
 // Mobile Menu
@@ -138,6 +138,31 @@ textarea {
     margin: 0 auto;
 }
 
+.container-sm{
+    max-width: $container-sm;
+    margin: 0 auto;
+}
+
+.container-md{
+    max-width: $container-md;
+    margin: 0 auto;
+}
+
+.container-lg{
+    max-width: $container-lg;
+    margin: 0 auto;
+}
+
+.container-xl{
+    max-width: $container-xl;
+    margin: 0 auto;
+}
+
+.container-xxl{
+    max-width: $container-xxl;
+    margin: 0 auto;
+}
+
 // Utility
 .flex-container {
     display: flex;
@@ -150,6 +175,10 @@ textarea {
 }
 
 // Components
+
+.hero{
+    text-align: center;
+}
 
 // Extra Small (Mobile First)
 @media (max-width: $media_xsmall) {

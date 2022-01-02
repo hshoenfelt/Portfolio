@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@700&display=swap");
 html {
   box-sizing: border-box;
-  font-size: 87.5%;
+  font-size: 100%;
 }
 
 *, *::before, *::after {
@@ -34,8 +34,8 @@ img {
 
 body {
   font-family: "Open Sans", "Playfair Display", "Poppins", "font-awesome", "Helvetica", "Arial", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.15;
   font-weight: 400;
 }
 
@@ -143,7 +143,7 @@ textarea {
 }
 
 .logo {
-  height: 7.8125rem;
+  font-size: 2rem;
 }
 
 .menubar {
@@ -170,12 +170,37 @@ textarea {
 }
 
 .page {
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .container {
   max-width: 100%;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-xl {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container-xxl {
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -187,6 +212,10 @@ textarea {
 
 .gap {
   gap: 1rem;
+}
+
+.hero {
+  text-align: center;
 }
 
 @media (min-width: 768px) {

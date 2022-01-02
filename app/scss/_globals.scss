@@ -1,7 +1,7 @@
 @use "sass:map";
 
 // root /* 14px / 16px = 0.875 = 87.5 */
-$root_font_size: 87.5%;
+$root_font_size: 100%;
 
 // fonts
 $fonts: 'Open Sans','Playfair Display', "Poppins", "font-awesome", "Helvetica", "Arial", sans-serif;
@@ -29,8 +29,12 @@ $container_max_width:(
 "xxl":     1320px);
 
 // containers
-$page: map-get($container_max_width , "xl" );
 $container:  map-get($container_max_width , "xs" );
+$container-sm:  map-get($container_max_width , "sm" );
+$container-md:  map-get($container_max_width , "md" );
+$container-lg:  map-get($container_max_width , "lg" );
+$container-xl:  map-get($container_max_width , "xl" );
+$container-xxl:  map-get($container_max_width , "xxl" );
 
 // breakpoints
 $breakpoints:(
@@ -40,6 +44,8 @@ $breakpoints:(
 "lg":      992px,
 "xl":      1200px,
 "xxl":     1400px);
+
+$page: map-get($breakpoints , "xxl" );
 
 // @media max-width xsmall.
 $media_xsmall: map-get($breakpoints , "xs" );
